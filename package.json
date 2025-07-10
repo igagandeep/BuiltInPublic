@@ -8,18 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "test": "vitest",
-    "test:watch": "vitest --watch",
-    "db:migrate": "supabase db reset --no-seed",
-    "db:seed": "tsx scripts/seed.ts",
-    "db:setup": "npm run db:migrate && npm run db:seed"
+    "test:watch": "vitest --watch"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.0",
-    "@supabase/auth-helpers-nextjs": "^0.10.0",
-    "@supabase/gotrue-js": "^2.69.1",
-    "@supabase/postgrest-js": "^1.19.4",
-    "@supabase/ssr": "^0.6.1",
-    "@supabase/supabase-js": "^2.50.0",
     "@tanstack/react-query": "^5.80.7",
     "@tanstack/react-query-devtools": "^5.81.5",
     "class-variance-authority": "^0.7.1",

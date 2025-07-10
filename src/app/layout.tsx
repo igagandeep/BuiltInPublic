@@ -10,9 +10,9 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth"> 
       <body>
-        <QueryProvider>
+        {/* <QueryProvider> */}
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
@@ -22,7 +22,7 @@ export default async function RootLayout({
             <ClientLayout>{children}</ClientLayout>
             <Footer />
           </ThemeProvider>
-        </QueryProvider>
+        {/* </QueryProvider> */}
       </body>
     </html>
   );
